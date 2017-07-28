@@ -1,0 +1,20 @@
+npm init
+
+npm i -S express pg pg-hstore sequelize body-parser
+
+touch .gitignore
+
+npm install -g sequelize-cli
+
+sequelize init
+
+change name of development database and password values in the config -> config.json
+
+do not worry about migrations - we'll go over that next week
+
+seeders - you can seed a database - injecting data into a database; can be done on test and production;
+
+if you require models as a directory, node looks for an index.js file in that directory;
+
+do not edit index.js
+in the index.js automatically finds all those files where we define the models and runs them
